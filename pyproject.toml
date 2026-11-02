@@ -1,0 +1,27 @@
+[project]
+name = "my_langchain_app"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "durgaprasad4521", email = "durgaprasad@kascommerce.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "ipykernel>=7.4.0",
+    "langchain>=1.0.0",
+    "langchain-community>=0.0.20",
+    "langchain-google-genai>=1.0.1",
+    "langchain-google-vertexai>=3.2.4",
+    "langchain-groq>=0.0.1",
+    "langchain-openai>=0.0.6",
+    "langgraph>=1.2.15",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+my_langchain_app = "my_langchain_app:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
